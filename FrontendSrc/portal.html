@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Alumni Portal</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      html, body {
+         height: 100%;
+         overflow-x: hidden;
+      }
+      body {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         min-height: 100vh;
+      }
+      .portal-main {
+         flex: 1;
+         padding: 2rem;
+         max-width: 1200px;
+         margin: 0 auto;
+      }
+      .portal-main .welcome {
+         text-align: center;
+         margin-bottom: 3rem;
+      }
+      .portal-main .welcome h1 {
+         font-size: 3rem;
+         color: var(--black);
+         margin-bottom: 1rem;
+      }
+      .portal-main .welcome p {
+         font-size: 1.8rem;
+         color: var(--black);
+      }
+      .portal-main .features {
+         display: flex;
+         flex-wrap: wrap;
+         gap: 1.5rem;
+         justify-content: center;
+      }
+      .portal-main .feature-box {
+         flex: 1 1 calc(33.33% - 2rem);
+         min-width: 280px;
+         max-width: 320px;
+         background: var(--white);
+         padding: 1.5rem;
+         border-radius: 0.5rem;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+         text-align: center;
+      }
+      .feature-box i {
+         font-size: 3rem;
+         margin-bottom: 1rem;
+         color: var(--main-color);
+      }
+      .feature-box h3 {
+         margin-bottom: 0.5rem;
+         font-size: 2rem;
+         color: var(--black);
+      }
+      .feature-box p {
+         font-size: 1.6rem;
+         color: var(--light-color);
+      }
+      .footer {
+         margin: 0;
+         padding: 1rem 2rem;
+         background: var(--white);
+      }
+   </style>
+</head>
+<body>
+<header class="header">
+   <section class="flex">
+      <div class="logo">Alumni Connection Portal</div>
+      <form class="search-form">
+         <input type="text" placeholder="search alumni, events..." maxlength="100">
+         <button type="button" class="fas fa-search"></button>
+      </form>
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Unknown</h3>
+         <p class="role">Student/Alumni</p>
+         <div class="flex-btn">
+            <button class="option-btn">login</button>
+            <button class="option-btn">register</button>
+         </div>
+      </div>
+   </section>
+</header>
+<div class="side-bar">
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Unknown</h3>
+      <p class="role">Student/Alumni</p>
+   </div>
+   <nav class="navbar">
+      <a href="#"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="#"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="#"><i class="fas fa-calendar"></i><span>Events</span></a>
+      <a href="#"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+      <a href="#"><i class="fas fa-users"></i><span>Alumni Directory</span></a>
+   </nav>
+</div>
+
+<section class="portal-main">
+   <div class="welcome">
+      <h1>Welcome to the Alumni Connection Portal</h1>
+      <p>Reconnect with peers, discover alumni events, and explore career opportunities.</p>
+   </div>
+   <div class="features">
+      <div class="feature-box">
+         <i class="fas fa-users"></i>
+         <h3>Alumni Directory</h3>
+         <p>Search and connect with your fellow alumni.</p>
+      </div>
+      <div class="feature-box">
+         <i class="fas fa-calendar-check"></i>
+         <h3>Events</h3>
+         <p>Stay updated on upcoming alumni and college events.</p>
+      </div>
+      <div class="feature-box">
+         <i class="fas fa-briefcase"></i>
+         <h3>Opportunities</h3>
+         <p>Explore career opportunities and networking resources.</p>
+      </div>
+   </div>
+</section>
+
+<footer class="footer">
+   &copy; copyright @ 2025 by <span>TDH</span> | all rights reserved!
+</footer>
+</body>
+</html>
