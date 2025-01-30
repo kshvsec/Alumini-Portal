@@ -4,12 +4,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>register</title>
+   <title>update</title>
 
-
+   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
-   
+   <!-- custom css file link  -->
    <link rel="stylesheet" href="CSS/style.css">
 
 </head>
@@ -19,7 +19,7 @@
    
    <section class="flex">
 
-      <a href="index.html" class="logo">Alumni Connection Portal</a>
+      <a href="home.html" class="logo">Project P</a>
 
       <form action="search.html" method="post" class="search-form">
          <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
@@ -35,8 +35,8 @@
 
       <div class="profile">
          <img src="images/pic-1.jpg" class="image" alt="">
-        <h3 class="name">Unknown</h3>
-      <p class="role">Student/Alumni</p>
+         <h3 class="name">Yash Gudiyal</h3>
+         <p class="role">student</p>
          <a href="profile.html" class="btn">view profile</a>
          <div class="flex-btn">
             <a href="login.html" class="option-btn">login</a>
@@ -56,18 +56,17 @@
 
    <div class="profile">
       <img src="images/pic-1.jpg" class="image" alt="">
-      <h3 class="name">Unknown</h3>
-      <p class="role">Student/Alumni</p>
+      <h3 class="name">Yash Gudiyal</h3>
+      <p class="role">student</p>
       <a href="profile.html" class="btn">view profile</a>
    </div>
 
    <nav class="navbar">
-      <a href="index.html"><i class="fas fa-home"></i><span>home</span></a>
+      <a href="index.html"><i class="fas fa-home"></i><span>Home</span></a>
       <a href="#"><i class="fas fa-calendar"></i><span>Events</span></a>
       <a href="alumni.html"><i class="fas fa-users"></i><span>Alumni Directory</span></a>
-      <a href="About us.html"><i class="fas fa-question"></i><span>about</span></a>
+      <a href="About us.html"><i class="fas fa-question"></i><span>About</span></a>
       <a href="#"><i class="fas fa-headset"></i><span>Contact Us</span></a>
-      
    </nav>
 
 </div>
@@ -75,18 +74,20 @@
 <section class="form-container">
 
    <form action="" method="post" enctype="multipart/form-data">
-      <h3>register now</h3>
-      <p>your name <span>*</span></p>
-      <input type="text" name="name" placeholder="enter your name" required maxlength="50" class="box">
-      <p>your email <span>*</span></p>
-      <input type="email" name="email" placeholder="enter your email" required maxlength="50" class="box">
-      <p>your password <span>*</span></p>
-      <input type="password" name="pass" placeholder="enter your password" required maxlength="20" class="box">
-      <p>confirm password <span>*</span></p>
-      <input type="password" name="c_pass" placeholder="confirm your password" required maxlength="20" class="box">
-      <p>select profile <span>*</span></p>
-      <input type="file" accept="image/*" required class="box">
-      <input type="submit" value="register new" name="submit" class="btn">
+      <h3>update profile</h3>
+      <p>update name</p>
+      <input type="text" name="name" placeholder="Yash Gudiyal" maxlength="50" class="box">
+      <p>update email</p>
+      <input type="email" name="email" placeholder="nobi@gmail.come" maxlength="50" class="box">
+      <p>previous password</p>
+      <input type="password" name="old_pass" placeholder="enter your old password" maxlength="20" class="box">
+      <p>new password</p>
+      <input type="password" name="new_pass" placeholder="enter your old password" maxlength="20" class="box">
+      <p>confirm password</p>
+      <input type="password" name="c_pass" placeholder="confirm your new password" maxlength="20" class="box">
+      <p>update pic</p>
+      <input type="file" accept="image/*" class="box">
+      <input type="submit" value="update profile" name="submit" class="btn">
    </form>
 
 </section>
@@ -111,7 +112,9 @@
 
 </footer>
 
+<!-- custom js file link  -->
 <script src="JS/script.js"></script>
- 
+
+   
 </body>
 </html>
