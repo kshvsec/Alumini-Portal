@@ -31,5 +31,12 @@ def login():
     else:
         return jsonify({"error": "Invalid username or password."}), 401
 
+@app.route("/register", methods=["POST"])
+def register():
+    data = request.json
+
+    username = data["username"]
+    password = data["password"]
+
 if __name__ == "__main__":
     app.run(debug=True)
