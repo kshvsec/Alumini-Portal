@@ -2,93 +2,200 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Login - Alumni Portal</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Alumni</title>
+
+   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-   <link rel="stylesheet" href="style.css">
-   <style>
-      * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
-      }
-      html, body {
-         height: 100%;
-         overflow-x: hidden;
-      }
-      body {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         min-height: 100vh;
-      }
-      .form-container {
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         min-height: calc(100vh - 20rem);
-      }
-      .form-container form {
-         background-color: var(--white);
-         border-radius: 0.5rem;
-         padding: 2rem;
-         width: 50rem;
-      }
-      .form-container form h3 {
-         font-size: 2.5rem;
-         text-transform: capitalize;
-         color: var(--black);
-         text-align: center;
-      }
-      .form-container form .box {
-         font-size: 1.8rem;
-         color: var(--black);
-         border-radius: 0.5rem;
-         padding: 1.4rem;
-         background-color: var(--light-bg);
-         width: 100%;
-         margin: 1rem 0;
-      }
-      .form-container form .btn {
-         width: 100%;
-         text-align: center;
-         margin-top: 1rem;
-         background-color: var(--main-color);
-         color: var(--white);
-         padding: 1rem;
-         border-radius: 0.5rem;
-         font-size: 1.8rem;
-         cursor: pointer;
-      }
-      .form-container form .btn:hover {
-         background-color: var(--black);
-         color: var(--white);
-      }
-   </style>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="CSS/style.css">
+
 </head>
 <body>
+
 <header class="header">
-   <section class="flex">
-      <div class="logo">Alumni Connection Portal</div>
-   </section>
-</header>
-<section class="form-container">
-   <form action="portal.html" method="post">
-      <h3>Login Now</h3>
-      <p>Your email <span>*</span></p>
-      <input type="email" name="email" placeholder="Enter your email" required maxlength="50" class="box">
-      <p>Your password <span>*</span></p>
-      <input type="password" name="password" placeholder="Enter your password" required maxlength="20" class="box">
-      <input type="submit" value="Login" class="btn">
-      <p>Don't have an account? <a href="register.html">Register here</a></p>
-   </form>
-</section>
-<footer class="footer">
-   &copy; copyright @ 2025 by <span>TDH</span> | all rights reserved!
-</footer>
-<script>
    
-</script>
+   <section class="flex">
+
+      <a href="index.html" class="logo">Alumni Connection Portal</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Unknown/h3>
+         <p class="role">student/alumni</p>
+         <a href="profile.html" class="btn">view profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">login</a>
+            <a href="Register.html" class="option-btn">register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Unknown</h3>
+      <p class="role">student/alumni</p>
+      <a href="profile.html" class="btn">view profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="portal.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="alumni.html"><i class="fas fa-users"></i><span>Alumni Directory new
+      </span></a>
+      <a href="About us.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+   </nav>
+
+</div>
+
+<section class="Alumni">
+
+   <h1 class="heading">Expert Alumni</h1>
+
+   <form action="" method="post" class="search-tutor">
+      <input type="text" name="search_box" placeholder="search tutors..." required maxlength="100">
+      <button type="submit" class="fas fa-search" name="search_tutor"></button>
+   </form>
+
+   <div class="box-container">
+
+      <div class="box offer">
+         <h3>become alumni
+         </h3>
+         <p>.....</p>
+         <a href="Register.html" class="inline-btn">get started</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-2.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>Developer</span>
+            </div>
+         </div>
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-3.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-4.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+         
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-5.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-6.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+         
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-7.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+        
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <img src="images/pic-8.jpg" alt="">
+            <div>
+               <h3>name</h3>
+               <span>developer</span>
+            </div>
+         </div>
+         
+         <a href="alumni_profile.html" class="inline-btn">view profile</a>
+      </div>
+
+   </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2025 by <span>TDH</span> | all rights reserved!
+
+</footer>
+
+<!-- custom js file link  -->
+<script src="JS/script.js"></script>
+
+   
 </body>
 </html>
