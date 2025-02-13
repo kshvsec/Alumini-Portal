@@ -16,6 +16,17 @@ def load_credentials():
             username, password = line.strip().split(",")
             credentials[username] = password
         return credentials
+        
+def search_user(filename, username):
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            for line in file:
+                data = line.strip().split(" | ")                 
+                if data[0].lower() == username.lower():         
+                    return f"User Found: {line.strip()}"
+        return "User not found."
+    except FileNotFoundError:
+        return "Database file not found."
 
 #save credentials
 def save_credentials(username, password):
